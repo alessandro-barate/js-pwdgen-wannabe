@@ -1,6 +1,6 @@
 // Qui dichiaro la variabile con il valore di 'user-identity' e stampo il risultato in console
 let currentElement = document.getElementById('user-identity');
-let currentText = currentElement.innerHTML
+let currentText = currentElement.innerHTML;
 console.log(document.getElementById('user-identity').innerHTML); 
 
 // Qui dichiaro la variabile const chiedendo all'utente (tramite prompt) il valore
@@ -18,6 +18,8 @@ console.log(userSurname);
 const userFavouriteColor = prompt('Digita il tuo colore preferito');
 console.log(userFavouriteColor);
 
+// Qui dichiaro una variabile che dia come risultato un numero casuale intero tra 1 e 100 compreso
+// e lo stampo in console
 let randomNumber = Math.floor((Math.random() * 100) + 1);
 console.log(randomNumber);
 
@@ -27,6 +29,6 @@ currentText = `${currentText} ${userName} ${userSurname} ${userFavouriteColor} $
 
 // Qui dichiaro che il valore di ciò che leggo dall'html diventa la variabile currentText
 // e stampo il risultato in console
-document.getElementById('user-identity').innerHTML = currentText;
+currentElement.innerHTML = currentText;
 console.log(currentText);
 
